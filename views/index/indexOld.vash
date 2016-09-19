@@ -1,0 +1,7 @@
+<div>
+  <h3>Program is up and running....</h3>
+  <h5>This is Index Page</h5>
+  <h4>Data Bindings:</h4>
+  Name: <label ng-bind="name"></label><br/><br/>
+  Age: <label ng-bind="age"></label>
+</div>

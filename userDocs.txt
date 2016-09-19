@@ -1,0 +1,14 @@
+The Application is using following Npm packages:
+
+1. Prerender.io: 
+
+
+This is the middleware to provide crawler with the Application in case it is created using Javascript framework where entire page is not remndered at once.
+
+To add prerender to the application, simple add a middleware using "app.use". Middle ware shall cache the page in "Prerender.io". When a crawler request is recieved. It observes a "fragment" meta tag in head of the Application which will guide crawler to look for the cached page in Prerender.io.
+
+To look for the Cached version simply append "/?_escaped_fragment_=" to the Page URL.
+
+2. PM2:
+
+run "npm install -g pm2" for the application

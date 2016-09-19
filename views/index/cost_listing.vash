@@ -1,0 +1,36 @@
+<div id="mws-container" class="clearfix">
+  <div class="container">
+    <div class="mws-panel grid_8">
+
+      <div class="mws-panel-header">
+        <span><i class="icon-table"> Cost Listing</i></span>
+      </div>
+
+      <div class="mws-panel-body no-padding" >
+        <table class="mws-table">
+          <thead>
+            <tr>
+              <th >Name</th>
+              <th >Speciality</th>
+              <th >Hospital</th>
+              <th >Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="details in cost.costList">
+              <td>{{details.name}}</td>
+              <td>{{details.speciality}}</td>
+              <td>{{details.hospital}}</td>
+              <td>{{details.location}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div id="mws-footer">
+    Copyright Your Website 2016. All Rights Reserved.
+  </div>
+
+</div>

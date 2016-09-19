@@ -1,0 +1,165 @@
+<div id="mws-container" class="clearfix">
+      <div class="container">
+          <div class="mws-panel grid_8">
+
+                  <div class="mws-panel-header">
+                      <span><i class="icon-pencil"></i> New Doctor</span>
+                  </div>
+
+                  <div class="mws-panel-body no-padding">
+                    <form class="mws-form ng-pristine ng-valid" action="/dash/new_doc" method="POST">
+
+                      <div class="mws-form-inline">
+
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">First Name</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" required name="firstname" ng-model="index.firstname">
+                          </div>
+                        </div>
+
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Last Name</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="lastname" ng-model="index.lastname">
+                          </div>
+                        </div>
+
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Gender</label>
+                          <div class="mws-form-item">
+                               <label for="male">Male</label>
+                               <input type="radio" name="gender" id="male" value="male" class="large ng-pristine ng-untouched ng-valid" ng-model="index.gender">
+                               <label for="female">Female</label>
+                               <input type="radio" name="gender" id="female" value="female" class="large ng-pristine ng-untouched ng-valid" ng-model="index.gender">                 
+                          </div>
+                        </div>
+
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">DOB</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="dob" ng-model="index.dob">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Mobile</label>
+                          <div class="mws-form-item">
+                              <input type="number" class="large ng-pristine ng-untouched ng-valid" name="mobile" ng-model="index.mobile">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">City</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="city" ng-model="index.city">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">State</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="state" ng-model="index.state">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Country</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="country" ng-model="index.country">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Discp</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="discp" ng-model="index.discp">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Email</label>
+                          <div class="mws-form-item">
+                              <input type="email" class="large ng-pristine ng-untouched ng-valid"  required name="email" ng-model="index.email">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">License Id.</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="licenseid" ng-model="index.licenseid">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Specialty</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="specialty" ng-model="index.specialty">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Exp.</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="exp" ng-model="index.exp">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Univ</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="univ" ng-model="index.univ">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Pass year</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="passyear" ng-model="index.passyear">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Hospname</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="hospname" ng-model="index.hospname">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Address</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="address" ng-model="index.address">
+                          </div>
+                        </div>
+                        
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Landmark</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="landmark" ng-model="index.landmark">
+                          </div>
+                        </div>
+                        
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Fee</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="fee" ng-model="index.fee">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Currency</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="currency" ng-model="index.currency">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Consult Day</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="consultday" ng-model="index.consultday">
+                          </div>
+                        </div>
+                        <div class="mws-form-row">
+                          <label class="mws-form-label">Consult Time</label>
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="consulttime" ng-model="index.consulttime">
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mws-button-row">
+                        <input type="submit" value="Submit" class="btn btn-danger" ng-click="index.postDoctor()">
+                        <input type="reset" value="Reset" class="btn ">
+                      </div>
+
+                    </form>
+                  </div>
+          </div>           
+      </div>
+</div>

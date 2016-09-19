@@ -1,0 +1,41 @@
+  <section class="default-section about-us" style="margin-top:60px;">
+    <div class="auto-container">
+        <div class="row clearfix">
+            
+              <!--Column-->
+
+              <div class="column text-column col-md-6 col-sm-12 col-xs-12">
+                <div class="inner-box">
+                      <div class="form-container">
+                      <h2>Login</h2>
+    
+                     
+                          <div class="mws-form-item">
+                              <input type="text" class="large ng-pristine ng-untouched ng-valid" name="lastname">
+                          </div>
+                          <div class="mws-button-row">
+                            <input type="submit" value="Submit" class="btn btn-danger" ng-click="login.userlogin('aaaa')">
+                            <input type="reset" value="Reset" class="btn ">
+                          </div>
+                      
+                      </div>
+                  </div>
+              </div>
+              
+              <!--Column-->
+              <div class="column col-md-6 col-sm-12 col-xs-12">
+                <div class="row clearfix">
+                    <br><br>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <script>
+        $(document).ready(function() {
+          $('.main-header').addClass('fixed-header');
+        });
+      </script>
+
+  </section>

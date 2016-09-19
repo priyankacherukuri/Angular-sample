@@ -1,0 +1,79 @@
+<div id="mws-container" class="clearfix">
+            <div class="container">
+                <div class="mws-stat-container clearfix">
+                  <a class="mws-stat" href="#">
+
+                      <!-- Statistic Icon (edit to change icon) -->
+
+                      <span class="mws-stat-icon icol32-building"></span>
+
+                        
+
+                        <!-- Statistic Content -->
+
+                        <span class="mws-stat-content">
+
+                          <span class="mws-stat-title">Doctor Count</span>
+
+                            <span class="mws-stat-value">{{index.docCount}}</span>
+
+                        </span>
+
+                    </a>
+
+
+
+                  <a class="mws-stat" href="#">
+
+                      <!-- Statistic Icon (edit to change icon) -->
+
+                      <span class="mws-stat-icon icol32-sport"></span>
+
+                        
+
+                        <!-- Statistic Content -->
+
+                        <span class="mws-stat-content">
+
+                          <span class="mws-stat-title">Hospital Count</span>
+
+                            <span class="mws-stat-value down">{{index.hospCount}}</span>
+
+                        </span>
+
+                    </a>
+
+
+
+                  <a class="mws-stat" href="#">
+
+                      <!-- Statistic Icon (edit to change icon) -->
+
+                      <span class="mws-stat-icon icol32-walk"></span>
+
+                        
+
+                        <!-- Statistic Content -->
+
+                        <span class="mws-stat-content">
+
+                          <span class="mws-stat-title">User Count</span>
+
+                            <span class="mws-stat-value">{{index.userCount}}</span>
+
+                        </span>
+
+                    </a>
+
+
+                </div>
+            </div>      
+            <div id="mws-footer">
+
+              Copyright Your Website 2016. All Rights Reserved.
+
+            </div>
+
+            
+
+        </div>

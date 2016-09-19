@@ -1,0 +1,9 @@
+/node_modules
+/public/lib
+/MongoDb
+<<<<<<< HEAD
+/applicationData
+=======
+/applicationData
+/.idea
+>>>>>>> 077d959d00ad018ad581df9df6ecd43175d264f9

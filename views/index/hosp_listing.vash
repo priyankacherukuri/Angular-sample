@@ -1,0 +1,56 @@
+
+<div class="table-responsive">
+  <div style="padding:30px;">
+    <table style="padding:20px;" st-table="hospital.hospitalList" class="table table-striped">
+      <thead>
+        <tr style="background:#2a79a3;">
+        <th st-sort="hospname">Name</th>
+        <th st-sort="hosplocation">Location</th>
+        <th st-sort="discription">Discription</th>
+        <th st-sort="address">Address</th>
+        <th st-sort="specialty">Specialty</th>
+        <th st-sort="superspecil">Superspecil</th>
+        <th st-sort="city">city</th>
+        <th st-sort="state">state</th>
+        <th st-sort="country">country</th>
+        <th st-sort="email">email</th>
+        <th st-sort="telno">Tel. no</th>
+      </tr>
+      <tr>
+        <th>
+          <input st-search="hospname" placeholder="search for firstname" class="input-sm form-control" type="search"/>
+        </th>
+        <th>
+          <input st-search="hosploction" placeholder="search for lastname" class="input-sm form-control" type="search"/>
+        </th>
+        <th colspan="4">
+          <input st-search placeholder="global search" class="input-sm form-control" type="search"/>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="row in hospital.hospitalList">
+              <td>{{row.hospname}}</td>
+              <td>{{row.hosplocation | uppercase}}</td>
+              <td>{{row.discription}}</td>
+              <td>{{row.address}}</td>
+              <td>{{row.specialty}}</td>
+              <td>{{row.superspecil}}</td>
+              <td>{{row.city}}</td>
+              <td>{{row.state}}</td>
+              <td>{{row.country}}</td>
+              <td>{{row.email}}</td>
+              <td>{{row.telno}}</td>
+      </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" class="text-center">
+            <div st-pagination="" st-items-by-page="10" st-displayed-pages="7"></div>
+          </td>
+        </tr>
+      </tfoot>
+    </table><br><br>
+    <script src="js/script.js"></script>
+  </div>
+</div>

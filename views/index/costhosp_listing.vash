@@ -1,0 +1,59 @@
+
+<div class="table-responsive">
+  <div style="padding:30px;">
+    <table style="padding:20px;" st-table="costhosp.costHospList" class="table table-striped">
+      <thead>
+        <tr style="background:#2a79a3;">
+              <th st-sort="sno"> S.no.</th>
+              <th st-sort="date">Date</th>
+              <th st-sort="partnername">Partner Name</th>
+              <th st-sort="patientname">Patient Name</th>
+              <th st-sort="country"> Country</th>
+              <th st-sort="querrecived">Query Recived</th>
+              <th st-sort="rplyrecived">Reply Recived</th>
+              <th st-sort="mv">MV</th>
+              <th st-sort="cp">CP</th>
+              <th st-sort="enter_rply">Enter Reply</th>
+              <th st-sort="revert">Revert</th>
+              <th st-sort="remark">Remarks</th>
+      </tr>
+      <tr>
+        <th>
+          <input st-search="partnername" placeholder="search for partnername" class="input-sm form-control" type="search"/>
+        </th>
+        <th>
+          <input st-search="date" placeholder="search for date" class="input-sm form-control" type="search"/>
+        </th>
+        <th colspan="4">
+          <input st-search placeholder="global search" class="input-sm form-control" type="search"/>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="details in costhosp.costHospList">
+              <td>{{details.sno}}</td>
+              <td>{{details.date}}</td>
+              <td>{{details.partner_name}}</td>
+              <td>{{details.paients_name}}</td>
+              <td>{{details.country}}</td>
+              <td>{{details.query_rcv}}</td>
+              <td>{{details.reply}}</td>
+              <td>{{details.mv}}</td>
+              <td>{{details.cp}}</td>
+              <td><textarea name="answer" ng-model="costhosp.answer"></textarea></td>
+              <td><button type="submit" name="submit" class="theme-btn btn-theme-one" ng-click="costhosp.hospRply(details.paients_name)">Reply</button></td>
+              <td>{{details.admin_remark}}</td>
+
+      </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" class="text-center">
+            <div st-pagination="" st-items-by-page="10" st-displayed-pages="7"></div>
+          </td>
+        </tr>
+      </tfoot>
+    </table><br><br>
+    <script src="js/script.js"></script>
+  </div>
+</div>

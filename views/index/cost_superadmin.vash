@@ -1,0 +1,83 @@
+
+<div class="table-responsive">
+  <div style="padding:30px;">
+    <table style="padding:20px;" st-table="costadmin.costAdminList" class="table table-striped">
+    <h3>Super Admin</h3>
+      <thead>
+        <tr style="background:#2a79a3;">
+              <th st-sort="sno"> S.no.</th>
+              <th st-sort="status">Status </th>
+              <th st-sort="enterdate">Enter_date</th>
+              <th st-sort="preferreddate">Preferred_date</th>
+              <th st-sort="partnername">Partner Name</th>
+              <th st-sort="partnertype">Partner Type</th>
+              <th st-sort="patientname">Patient Name</th>
+              <th st-sort="procedure">Procedure</th>
+              <th st-sort="superspecil">Super Specil</th> 
+              <th st-sort="roomtype">Room Type</th>  
+              <th st-sort="country"> Country</th>
+              <th st-sort="telno"> Mobile</th>
+              <th st-sort="email"> Email</th>
+              <th st-sort="eta">ETA</th>
+              <th st-sort="disease">Disease</th>
+              <th st-sort="hospital" >Hospital</th>
+              <th st-sort="querrecived">Query Recived</th>
+              <th st-sort="rplyrecived">Reply Recived</th>
+              <th st-sort="rp">RP</th>
+              <th st-sort="cp">CP</th>
+              <th st-sort="tcp">TCP</th>
+              <th st-sort="gfa">GFA</th>
+              <th st-sort="gfp">GFP</th>
+              <th st-sort="remark">Remarks</th>
+      </tr>
+      <tr>
+        <th>
+          <input st-search="partnername" placeholder="search for partnername" class="input-sm form-control" type="search"/>
+        </th>
+        <th>
+          <input st-search="disease" placeholder="search for disease" class="input-sm form-control" type="search"/>
+        </th>
+        <th colspan="4">
+          <input st-search placeholder="global search" class="input-sm form-control" type="search"/>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="details in costadmin.costAdminList">
+              <td>{{details.sno}}</td>
+              <td><button type="submit" name="submit" class="theme-btn btn-theme-one" ng-click="costadmin.changeStatus(details.paients_name)">{{details.status}}</button></td>
+              <td>{{details.enterdate}}</td>
+              <td>{{details.preferreddate}}</td>
+              <td>{{details.partner_name}}</td>
+              <td>{{details.partner_type}}</td>
+              <td>{{details.paients_name}}</td>
+              <td>{{details.procedure}}</td>
+              <td>{{details.superspecil}}</td>
+              <td>{{details.roomtype}}</td>
+              <td>{{details.country}}</td>
+              <td>{{details.tel_no}}</td>
+              <td>{{details.email}}</td>
+              <td>{{details.eta}}</td>
+              <td>{{details.disease}}</td>
+              <td>{{details.hospital}}</td>
+              <td>{{details.query_rcv}}</td>
+              <td>{{details.reply}}</td>
+              <td>{{details.rp}}</td>
+              <td>{{details.cp}}</td>
+              <td>{{details.tcp}}</td>
+              <td>{{details.gfa}}</td>
+              <td>{{details.gfp}}</td>
+              <td>{{details.admin_remark}}</td>
+      </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" class="text-center">
+            <div st-pagination="" st-items-by-page="10" st-displayed-pages="7"></div>
+          </td>
+        </tr>
+      </tfoot>
+    </table><br><br>
+    <script src="js/script.js"></script>
+  </div>
+</div>

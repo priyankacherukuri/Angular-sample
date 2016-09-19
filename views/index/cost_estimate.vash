@@ -1,0 +1,51 @@
+<div class="container" style="margin-top:30px;">
+  <div class="mws-panel grid_8">
+
+    <div class="mws-panel-header">
+        <span><i class="icon-pencil"></i> Estimate Box</span>
+    </div>
+
+    <div class="mws-panel-body no-padding">
+      <form class="mws-form ng-pristine ng-valid" action="/dash/cost_estimate" method="POST">
+
+        <div class="mws-form-inline">
+
+          <div class="mws-form-row">
+            <label class="mws-form-label">Name</label>
+            <div class="mws-form-item">
+                <input type="text" class="large ng-pristine ng-untouched ng-valid" name="name">
+            </div>
+          </div>
+
+          <div class="mws-form-row">
+            <label class="mws-form-label">Speciality</label>
+            <div class="mws-form-item">
+                <input type="text" class="large ng-pristine ng-untouched ng-valid" name="speciality">
+            </div>
+          </div>
+
+          <div class="mws-form-row">
+            <label class="mws-form-label">Hospital</label>
+            <div class="mws-form-item">
+                <input type="text" class="large ng-pristine ng-untouched ng-valid" name="hospital">
+            </div>
+          </div>
+
+          <div class="mws-form-row">
+            <label class="mws-form-label">Location</label>
+            <div class="mws-form-item">
+                <input type="text" class="large ng-pristine ng-untouched ng-valid" name="location">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mws-button-row">
+          <input type="submit" value="Submit" class="btn btn-danger" ng-click="index.postDoctor()">
+          <input type="reset" value="Reset" class="btn ">
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

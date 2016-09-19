@@ -1,0 +1,21 @@
+.plan-info{
+ position:fixed;
+ right: 0;
+ top: 150px;
+ height: 68px;
+ width: 180px;
+ background: #11c3f0;
+ padding:13px 0px;
+ color:#ffffff;
+ font-size:15px;
+ text-align:center;
+ font-family:'Montserrat',sans-serif;
+ border-radius: 35px 0px 0px 35px;
+}
+
+.images-container .item-box{
+	width:22% !important;
+	display:none !important;
+    border: 1px solid #DBDADA !important;
+    margin: 1% !important;
+}

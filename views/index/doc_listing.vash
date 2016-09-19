@@ -1,0 +1,84 @@
+
+<div class="table-responsive">
+  <div style="padding:30px;">
+    <table style="padding:20px;" st-table="doctor.doctorList" class="table table-striped">
+      <thead>
+        <tr style="background:#2a79a3;">
+        <th st-sort="firstName">First name</th>
+        <th st-sort="lastName">Last name</th>
+        <th st-sort="gender">gender</th>
+        <th st-sort="dob">dob</th>
+        <th st-sort="mobile">mobile</th>
+        <th st-sort="city">city</th>
+        <th st-sort="state">state</th>
+        <th st-sort="country">country</th>
+        <th st-sort="discp">Discp</th>
+        <th st-sort="email">email</th>
+        <th st-sort="licenseid">licenseid</th>
+        <th st-sort="specialty">specialty</th>
+        <th st-sort="superspecil">superspecil</th>
+        <th st-sort="exp">exp</th>
+        <th st-sort="univ">univ</th>
+        <th st-sort="passyear">passyear</th>
+        <th st-sort="hospname">hospname</th>
+        <th st-sort="address">address</th>
+        <th st-sort="landmark">landmark</th>
+        <th st-sort="fee">fee</th>
+        <th st-sort="currency">currency</th>
+        <th st-sort="consultday">consultday</th>
+        <th st-sort="consulttime">consulttime</th>
+      </tr>
+      <tr>
+        <th>
+          <input st-search="firstName" placeholder="search for firstname" class="input-sm form-control" type="search"/>
+        </th>
+        <th>
+          <input st-search="lastName" placeholder="search for lastname" class="input-sm form-control" type="search"/>
+        </th>
+        <th colspan="4">
+          <input st-search placeholder="global search" class="input-sm form-control" type="search"/>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="row in doctor.doctorList">
+        <td>{{row.firstname | uppercase}}</td>
+        <td>{{row.lastname}}</td>
+        <td>{{row.gender | uppercase}}</td>
+        <td>{{row.dob}}</td>
+        <td>{{row.mobile}}</td>
+        <td>{{row.city}}</td>
+        <td>{{row.state}}</td>
+        <td>{{row.country}}</td>
+        <td>{{row.discp}}</td>
+        <td><a ng-href="mailto:{{row.email}}">email</a></td>
+        <td>{{row.licenseid}}</td>
+        <td>{{row.specialty}}</td>
+        <td>{{row.superspecil}}</td>
+        <td>{{row.exp}}</td>
+        <td>{{row.univ}}</td>
+        <td>{{row.passyear}}</td>
+        <td>{{row.hospname}}</td>
+        <td>{{row.address}}</td>
+        <td>{{row.landmark}}</td>
+        <td>{{row.fee}}</td>
+        <td>{{row.currency}}</td>
+        <td>{{row.consultday}}</td>
+        <td>{{row.consulttime}}</td>
+
+
+
+
+      </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5" class="text-center">
+            <div st-pagination="" st-items-by-page="10" st-displayed-pages="7"></div>
+          </td>
+        </tr>
+      </tfoot>
+    </table><br><br>
+    <script src="js/script.js"></script>
+  </div>
+</div>
