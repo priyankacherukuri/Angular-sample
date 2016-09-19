@@ -12,3 +12,33 @@
   "author": "Priya",
   "license": "ISC"
 }
+ "dependencies": {
+    "body-parser": "^1.15.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.1",
+    "cookie-session": "^2.0.0-alpha.1",
+    "express": "~4.13.3",
+    "flash": "^1.1.0",
+    "method-override": "^2.3.5",
+    "mongodb": "~2.1.18",
+    "mongoose": "^4.4.13",
+    "path": "^0.12.7",
+    "session": "^0.1.0",
+    "util": "^0.10.3",
+    "vash": "~0.11.0",
+    "bcryptjs": "^2.1.0",
+    "ejs": "^2.3.3",
+    "express-jwt": "^3.0.1",
+    "express-session": "^1.11.3",
+    "jsonwebtoken": "^5.0.2",
+    "lodash": "^3.10.0",
+    "mongoskin": "^2.1.0",
+    "q": "^1.4.1",
+    "request": "^2.58.0",
+    "rootpath": "^0.1.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-nodemon": "~0.4.1"
+  }
+}
